@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css"
     <title>Mark Whitehead</title>
   </head>
   <body>
+    <!-- <style>
+      h1 {
+        color: red;
+      }
+    </style> -->
     <header>
       <nav>
         <a href="../portfolio/pages/contact.html">Contact</a>
         <a href="../portfolio/pages/projects.html">Projects</a>
+        <a href="https://www.grado.co.uk/">Headphones I recommend</a>
       </nav>
       <h1>Mark Whitehead</h1>
       <h2>Trying to change careers and be good at it.</h2>
@@ -18,7 +26,7 @@
       <hr />
     </header>
     <figure>
-      <img
+      <img class="main-photo"
         src="../portfolio/images/IMG_20220618_100917.jpg"
         alt="A photo of Mark Whitehead"
       />
@@ -36,6 +44,7 @@
         </p>
         <figure>
           <img
+            class="photo-camping"
             src="../portfolio/images/campingSkye.JPG"
             alt="Mark camping on the Isle of Skye"
           />
@@ -45,10 +54,11 @@
         </figure>
         <figure>
           <img
+            class="photo-food-corfu"
             src="../portfolio/images/foodInCorfu.jpg"
             alt="Mark eating food in the old streets of Corfu"
           />
-          <figcaption>
+          <figcaption id="corfu-text">
             Mark eating food in a restraunt in the old town of Corfu
           </figcaption>
         </figure>
@@ -76,6 +86,32 @@
         </ul>
       </section>
     </article>
+
+    <section>
+      <div id="about-me">
+        <h3>About Me</h3>
+        <img class="about-image" src="https://picsum.photos/200/300/?blur" alt="about me picture" />
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo sequi rem quas dicta magni quaerat? Debitis aperiam laboriosam ipsam delectus ducimus eveniet minima incidunt facilis natus quia ea, odio fugiat?</p>
+        <p id="about-second-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nobis maiores? Iure minima maiores inventore cupiditate, autem, porro, sapiente voluptatibus aspernatur dicta labore velit similique dignissimos libero cum natus non.</p>
+        <div>
+          <p>Third Paragraph</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <div id="socials">
+      <h3>My Socials</h3>
+      <p>Follow me on <a href="">Twitter</a>!</p>
+      <p>Follow me on <a href="">Instagram</a>!</p>
+      
+      <input type="checkbox" id="box" name="test-checkbox" checked />
+      <label for="test-checkbox">Check this box for some reason</label>
+      <button disabled>You can't press this...</button>
+    </div>
+
+
+
     <footer>&copy Mark Whitehead 2022</footer>
   </body>
 </html>
