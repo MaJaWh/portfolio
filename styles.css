@@ -1,176 +1,88 @@
 /* CSS HEX
---caput-mortuum: #563324ff;
---light-yellow: #f8fcdaff;
---old-rose: #bb8588ff;
---blue-sapphire: #086788ff;
---cadet-blue: #5ca4a9ff;
+--pale-spring-bud: #ccd5aeff;
+--pale-spring-bud-2: #e9edc9ff;
+--cornsilk: #fefae0ff;
+--papaya-whip: #faedcdff;
+--fawn: #d4a373ff;
+
+--- TYPEOGRAPHY SYSTEM
+
+- Font size(px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weights:
+
+
+- Line Heights:
+
+
+- Letter Spacing
+
+
+--- 07 WHITESPACE
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
 */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Text Sizing */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
 
 body {
-  font-family: Ariel, Helvetica, sans-serif;
+  background: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
 }
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
 h1 {
-  font-size: 30px;
-  color: red;
+  margin-top: 0;
+  font-size: 2.488rem;
 }
 
 h2 {
-  color: blue;
+  font-size: 2.074rem;
 }
 
-a {
-  text-decoration: none;
+h3 {
+  font-size: 1.728rem;
 }
 
-.main-photo {
-  height: 20%;
-  width: 20%;
-  padding: 20px;
-  background-color: rgb(64, 52, 47);
-}
-#corfu-text {
-  font-size: 20px;
+h4 {
+  font-size: 1.44rem;
 }
 
-.photo-camping {
-  height: 20%;
-  width: 20%;
-  padding: 20px;
-  background-color: #bb8588ff;
-}
-.photo-food-corfu {
-  height: 20%;
-  width: 20%;
-  padding: 20px;
-  background-color: #5ca4a9ff;
+h5 {
+  font-size: 1.2rem;
 }
 
-#about-me > div {
-  background-color: #f8fcdaff;
-  color: green;
+small,
+.text_small {
+  font-size: 0.833rem;
 }
-
-.about-image + p {
-  font-size: 20px;
-}
-
-.about-image ~ div {
-  font-size: 20px;
-}
-
-#socials {
-  background-color: rgb(132, 132, 183);
-}
-#box:checked + label {
-  outline: 3px solid green;
-}
-#about-second-paragraph:hover {
-  background-color: green;
-}
-p {
-  position: relative;
-}
-p::first-letter {
-  color: red;
-}
-p::after {
-  content: "";
-  background-color: palegoldenrod;
-  height: 20px;
-  width: 50%;
-  position: absolute;
-  left: 60px;
-  z-index: -1;
-}
-a[href="https://www.grado.co.uk/"]
-{
-  background-color: red;
-}
-
-.div-element {
-  height: 100px;
-  width: 100px;
-  color: white;
-  background-color: red;
-}
-
-.span-element {
-  display: inline-block;
-  height: 100px;
-  width: 100px;
-  color: white;
-  background-color: blue;
-}
-
-.container {
-  display: grid;
-  width: 750px;
-  height: 600px;
-  grid-template-columns: 200px 1fr 1fr;
-  grid-template-rows: 100px 1fr 1fr 100px;
-  grid-gap: 1rem;
-  grid-template-areas: "header header header" "sidebar content-1 content-1" "sidebar content-2 content-3" "footer footer footer";
-}
-
-.header {
-  /* background-color: pink; */
-  grid-area: header;
-}
-.sidebar {
-  /* background-color: orange; */
-  grid-area: sidebar;
-}
-.content-1 {
-  /* background-color: red; */
-  grid-area: content-1;
-}
-.content-2 {
-  /* background-color: green; */
-  grid-area: content-2;
-}
-.content-3 {
-  /* background-color: green; */
-  grid-area: content-3;
-}
-.footer {
-  /* background-color: blue; */
-  grid-area: footer;
-  grid-row: 4 / 5;
-  grid-column: 1 / 4;
-}
-
-.box-grid {
-  background-color: #3b404e;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.item {
-  background-color: #1eaafc;
-  background-image: linear-gradient(
-    130deg,
-    #6c52d9 0%,
-    #1eaafc 85%,
-    #3edfd7 100%
-  );
-  box-shadow {
-    0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
-  };
-  color: #ffffff;
-  border-radius: 4px;
-  border: 6px solid #171717;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
+/******************MAIN NAV STYLES********************/
+.main-nav {
+  background-color: #ccd5aeff;
 }
