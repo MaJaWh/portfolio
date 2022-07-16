@@ -12,6 +12,9 @@
 
 - Font Weights:
 
+- Font Color:
+rgb(161, 88, 88)
+Main Text rgb(54, 54, 54)
 
 - Line Heights:
 
@@ -103,7 +106,7 @@ small,
 /**************HOME-LINK************/
 
 .home-link {
-  color: rgb(163, 127, 90);
+  color: rgb(54, 54, 54);
   text-decoration: none;
   font-size: 2.3rem;
 }
@@ -163,12 +166,21 @@ small,
 }
 
 .contact-hero {
+  font-size: 1.4rem;
   position: absolute;
   text-decoration: none;
   top: 400px;
   left: 100px;
   color: rgb(161, 88, 88);
-  background-color: rgb(54, 54, 54);
+  padding: 15px 30px;
+  border: 3px solid rgb(161, 88, 88);
+}
+
+.contact-hero:hover {
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  border: none;
 }
 /**************Bio************/
 #bio {
