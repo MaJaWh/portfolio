@@ -184,13 +184,39 @@ small,
 }
 /**************Bio************/
 #bio {
+  display: flex;
+  justify-content: center;
   max-width: 130rem;
+  height: 60rem;
   margin: 0 auto;
-  background-color: #faedcdff;
-
   margin-bottom: 30px;
+  background-color: #faedcdff;
 }
-
+.bio-container {
+  margin: 10rem;
+  display: flex;
+  gap: 10%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.bio-text {
+  height: 40rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.about-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(161, 88, 88);
+}
+.bio-photos {
+  height: 40rem;
+  width: 60%;
+  background-color: blue;
+}
 /**************Projects Section************/
 #projects {
   display: flex;
