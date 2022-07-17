@@ -106,7 +106,7 @@ small,
 /**************HOME-LINK************/
 
 .home-link {
-  color: rgb(54, 54, 54);
+  color: rgb(161, 88, 88);
   text-decoration: none;
   font-size: 2.3rem;
 }
@@ -120,7 +120,7 @@ small,
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
-  color: black;
+  color: rgb(54, 54, 54);
   font-weight: 500;
   font-size: 1.4rem;
 }
@@ -159,7 +159,7 @@ small,
   transform: rotate(300deg);
 }
 .hero-text-short {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   position: absolute;
   top: 250px;
   left: 105px;
@@ -190,7 +190,7 @@ small,
   height: 60rem;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-color: #faedcdff;
+  background-color: rgb(246, 241, 227);
 }
 .bio-container {
   margin: 10rem;
@@ -210,12 +210,48 @@ small,
 .about-title {
   font-size: 4rem;
   font-weight: bold;
-  color: rgb(161, 88, 88);
+  color: rgb(54, 54, 54);
 }
 .bio-photos {
   height: 40rem;
   width: 60%;
-  background-color: blue;
+  position: relative;
+}
+#image-ideas {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  transform: rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: -10px 10px 20px rgb(157, 157, 157);
+}
+
+#image-wireframe {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  top: 7%;
+  left: 25%;
+  transform: rotate(10deg);
+  border-radius: 20px;
+}
+
+#image-HTML {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  transform: rotate(15deg);
+  border-radius: 20px;
 }
 /**************Projects Section************/
 #projects {
