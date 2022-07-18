@@ -190,7 +190,7 @@ small,
   height: 60rem;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-color: rgb(246, 241, 227);
+  background-color: rgb(243, 241, 234);
 }
 .bio-container {
   margin: 10rem;
@@ -208,9 +208,15 @@ small,
   justify-content: flex-start;
 }
 .about-title {
+  margin-top: 0;
+  margin-bottom: 10%;
   font-size: 4rem;
   font-weight: bold;
   color: rgb(54, 54, 54);
+}
+
+#bio p {
+  font-size: 1.4rem;
 }
 .bio-photos {
   height: 40rem;
