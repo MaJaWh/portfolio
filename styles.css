@@ -94,6 +94,9 @@ small,
 
 /**************HEADER************/
 #header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,6 +104,7 @@ small,
   margin: 0 auto;
   height: 74px;
   padding: 2rem;
+  background-color: #646464bb;
 }
 
 /**************HOME-LINK************/
@@ -137,9 +141,18 @@ small,
   object-fit: cover;
 }
 #hero-text {
+  height: 45rem;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 40px;
+  left: 40px;
+}
+
+#hero-text-header {
+  display: flex;
+  flex-direction: row;
 }
 .hero-text-main {
   /* background-color: blue; */
@@ -151,19 +164,17 @@ small,
   letter-spacing: -3px;
 }
 .hero-text-k {
+  margin-left: 5px;
   font-weight: bold;
   font-size: 7.4rem;
   color: rgb(161, 88, 88);
-  top: 170px;
-  left: 420px;
 }
 .hero-text-k:hover {
   transform: rotate(300deg);
 }
 .hero-text-short {
+  flex-grow: 1;
   font-size: 1.3rem;
-  top: 250px;
-  left: 105px;
 }
 
 .contact-hero {
@@ -189,8 +200,8 @@ small,
   max-width: 130rem;
   height: 60rem;
   margin: 0 auto;
-  margin-bottom: 30px;
   background-color: rgb(243, 241, 234);
+  border-bottom: 2px solid black;
 }
 .bio-container {
   margin: 10rem;
@@ -267,8 +278,9 @@ small,
   justify-content: center;
   align-items: center;
   width: 130rem;
-  height: 50rem;
+  height: 60rem;
   margin: 0 auto;
+  background-color: rgb(243, 241, 234);
 }
 
 .project {
@@ -296,16 +308,27 @@ small,
 
 /**************CONTACT************/
 .page-outer {
-  min-height: 100vh;
+  min-height: 60rem;
   position: relative;
   width: 130rem;
-  height: 50rem;
   margin: 0 auto;
+  background-color: blue;
 }
 
 #section-contact {
   position: static;
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
   background-color: #5c5c5c;
+}
+.text-zone {
+  width: 50%;
+  padding: 4rem;
+}
+#map {
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  background-color: green;
 }
